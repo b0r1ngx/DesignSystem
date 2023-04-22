@@ -75,13 +75,13 @@ class ShowcaseFragment : Fragment() {
                 cornerButtonOnClick = ::onCornerButtonClick,
                 data = data
             )
-//            useHeaderWithHorizontalItemsAndButton(
-//                header = "А вот и треки",
-//                cornerButtonText = "* клик *",
-//                cornerButtonOnClick = ::onCornerButtonClick,
-//                data = data,
-//                buttonText = "клик клик !!!"
-//            )
+            useHeaderWithHorizontalItemsAndButton(
+                header = "А вот и треки",
+                cornerButtonText = "* клик *",
+                cornerButtonOnClick = ::onCornerButtonClick,
+                data = data,
+                buttonText = "клик клик !!!"
+            )
         }
     }
 

@@ -29,5 +29,6 @@
         <include layout="@layout/items" />
 
         <include layout="@layout/items_horizontal" />
+        <include layout="@layout/items_horizontal_button" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -124,6 +124,11 @@ class DesignHelper(
             layoutManager = horizontalLayoutManager
             adapter = horizontalAdapter
         }
+
+        layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button).text =
+            cornerButtonText
+        layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button)
+            .setOnClickListener { cornerButtonOnClick() }
     }
 
     fun useHeaderWithHorizontalItemsAndButton(
@@ -144,7 +149,7 @@ class DesignHelper(
         val horizontalAdapter = HorizontalAdapter(data)
         with(horizontalRecyclerView) {
             layoutManager = horizontalLayoutManager
-            setAdapter(horizontalAdapter)
+            adapter = horizontalAdapter
         }
 
         layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).text = buttonText
