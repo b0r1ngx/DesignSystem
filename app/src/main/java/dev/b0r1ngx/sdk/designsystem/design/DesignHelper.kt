@@ -29,12 +29,18 @@ class DesignHelper(
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.header).text = header
     }
 
-    fun useHeaderSubHeaderButton(header: String, subHeader: String, buttonText: String) {
+    fun useHeaderSubHeaderButton(
+        header: String,
+        subHeader: String,
+        buttonText: String,
+        buttonOnClick: () -> Unit
+    ) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.card_header_sub_header_button)
 
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.header).text = header
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.sub_header).text = subHeader
         layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).text = buttonText
+        layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).setOnClickListener { buttonOnClick() }
     }
 
     fun useTitleDescription(title: String, description: String) {
@@ -82,7 +88,9 @@ class DesignHelper(
         cornerButtonText: String,
         cornerButtonOnClick: () -> Unit,
         data: Array<String>,
-        buttonText: String
+        buttonText: String,
+        buttonOnClick: () -> Unit
+
     ) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.items_vertical_button)
 
@@ -99,6 +107,7 @@ class DesignHelper(
         }
 
         layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).text = buttonText
+        layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).setOnClickListener { buttonOnClick() }
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button).text =
             cornerButtonText
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button)
@@ -136,7 +145,9 @@ class DesignHelper(
         cornerButtonText: String,
         cornerButtonOnClick: () -> Unit,
         data: Array<String>,
-        buttonText: String
+        buttonText: String,
+        buttonOnClick: () -> Unit
+
     ) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.items_horizontal_button)
 
@@ -153,6 +164,7 @@ class DesignHelper(
         }
 
         layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).text = buttonText
+        layout.findViewById<Button>(dev.b0r1ngx.sdk.design.R.id.button).setOnClickListener { buttonOnClick() }
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button).text =
             cornerButtonText
         layout.findViewById<TextView>(dev.b0r1ngx.sdk.design.R.id.corner_button)
