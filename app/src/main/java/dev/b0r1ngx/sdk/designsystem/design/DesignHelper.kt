@@ -15,7 +15,6 @@ class DesignHelper(
     private val context: Context,
     private val parent: View
 ) {
-
     fun useHeaderSubHeader(header: String, subHeader: String) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.card_header_sub_header)
 
@@ -91,7 +90,6 @@ class DesignHelper(
         data: Array<String>,
         buttonText: String,
         buttonOnClick: () -> Unit
-
     ) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.items_vertical_button)
 
@@ -149,7 +147,6 @@ class DesignHelper(
         data: Array<String>,
         buttonText: String,
         buttonOnClick: () -> Unit
-
     ) {
         val layout = findConstraintLayout(dev.b0r1ngx.sdk.design.R.id.items_horizontal_button)
 
