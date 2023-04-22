@@ -46,7 +46,8 @@ class ShowcaseFragment : Fragment() {
             useHeaderSubHeaderButton(
                 header = "Ну что ты с нами ?",
                 subHeader = "может быть иначе ?!",
-                buttonText = "Конечно участвую !"
+                buttonText = "Конечно участвую !",
+                buttonOnClick =  ::onCornerButtonClick
             )
             useTitleDescription(
                 title = "Теперь ты с нами",
@@ -67,7 +68,8 @@ class ShowcaseFragment : Fragment() {
                 cornerButtonText = "* клик *",
                 cornerButtonOnClick = ::onCornerButtonClick,
                 data = data,
-                buttonText = "клик клик !!!"
+                buttonText = "клик клик !!!",
+                buttonOnClick = ::onCornerButtonClick
             )
             useHeaderWithHorizontalItems(
                 header = "Hello I'm RecyclerView",
@@ -80,7 +82,8 @@ class ShowcaseFragment : Fragment() {
                 cornerButtonText = "* клик *",
                 cornerButtonOnClick = ::onCornerButtonClick,
                 data = data,
-                buttonText = "клик клик !!!"
+                buttonText = "клик клик !!!",
+                buttonOnClick = ::onCornerButtonClick
             )
         }
     }
