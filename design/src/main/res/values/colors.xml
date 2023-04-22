@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#000000</color>
+    <color name="Blackout">#333333</color>
+    <color name="Gray">#9299A2</color>
+    <color name="Blue">#428BF9</color>
+    <color name="item_background">#08102408</color>
+    <color name="button_background">#08102408</color>
+    <color name="button_background_pressed">#0F102408</color>
+</resources>

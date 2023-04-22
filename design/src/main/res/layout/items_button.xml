@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/items_vertical_button"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:elevation="34dp"
+    android:paddingStart="20dp"
+    android:paddingTop="16.5dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/TextView.Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:maxLines="1"
+        android:text="@string/header"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/corner_button"
+        style="@style/TextView.OutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:paddingTop="4.5dp"
+        android:paddingBottom="3.5dp"
+
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12.5dp"
+
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+
+        tools:itemCount="3"
+        tools:listitem="@layout/item_vertical" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/TextView.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+
+        android:maxLines="1"
+        android:text="Button"
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

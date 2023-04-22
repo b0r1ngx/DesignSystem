@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "dev.b0r1ngx.sdk.designsystem"
-        minSdk 21
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
